@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMaster Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="bg-stone-100 min-h-screen">
+        <header class="bg-stone-900 text-white">
+            <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+                <h1 class="text-2xl font-bold">BuildMaster Co.</h1>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-yellow-500 transition">Home</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Services</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Projects</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+                </nav>
+                <button id="menu-toggle" class="md:hidden">
+                    <span id="menu-icon">&#9776;</span>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-stone-800 py-4">
+                <nav class="flex flex-col items-center space-y-4">
+                    <a href="#" class="hover:text-yellow-500 transition">Home</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Services</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Projects</a>
+                    <a href="#" class="hover:text-yellow-500 transition">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="relative h-[600px] flex items-center justify-center text-white">
+                <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Construction site" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-20 text-center">
+                    <h2 class="text-5xl font-bold mb-4">Building Your Future</h2>
+                    <p class="text-xl mb-8">Quality Construction Services for Every Project</p>
+                    <button class="btn bg-yellow-500 hover:bg-yellow-600 text-stone-900">
+                        Get a Quote
+                    </button>
+                </div>
+            </section>
+
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-stone-100 p-6 rounded-lg text-center">
+                            <div class="text-4xl mb-4">🏠</div>
+                            <h3 class="text-xl font-semibold mb-2">Residential Construction</h3>
+                            <p class="text-stone-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="bg-stone-100 p-6 rounded-lg text-center">
+                            <div class="text-4xl mb-4">🏢</div>
+                            <h3 class="text-xl font-semibold mb-2">Commercial Buildings</h3>
+                            <p class="text-stone-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div class="bg-stone-100 p-6 rounded-lg text-center">
+                            <div class="text-4xl mb-4">🔨</div>
+                            <h3 class="text-xl font-semibold mb-2">Renovation & Remodeling</h3>
+                            <p class="text-stone-600">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-stone-200">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12">Our Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2231&q=80" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="btn font-semibold">
+                                    View Project
+                                    <span class="ml-2">&rsaquo;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Repeat similar blocks for other projects -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 bg-stone-900 text-white">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                            <form class="space-y-4">
+                                <input type="text" placeholder="Your Name" class="input bg-stone-800 border-stone-700">
+                                <input type="email" placeholder="Your Email" class="input bg-stone-800 border-stone-700">
+                                <input type="tel" placeholder="Your Phone" class="input bg-stone-800 border-stone-700">
+                                <textarea placeholder="Your Message" class="textarea bg-stone-800 border-stone-700" rows="4"></textarea>
+                                <button type="submit" class="btn w-full bg-yellow-500 hover:bg-yellow-600 text-stone-900">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                            <div class="space-y-4">
+                                <p class="flex items-center">
+                                    <span class="mr-2">&#9742;</span> +923359033554
+                                </p>
+                                <p class="flex items-center">
+                                    <span class="mr-2">&#9993;</span> junaidulhaquesheikh204@gmail.com
+                                </p>
+                                <p class="flex items-center">
+                                    <span class="mr-2">&#9873;</span> 123 Construction Ave, Builder City, BC 12345
+                                </p>
+                            </div>
+                            <div class="mt-8">
+                                <h4 class="text-xl font-semibold mb-2">Office Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                <p>Saturday: 9:00 AM - 1:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-stone-800 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2023 BuildMaster Co. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
